@@ -191,7 +191,7 @@ h3 {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.8rem;
 }
 
@@ -226,13 +226,6 @@ h3 {
 .icon-frame {
   object-fit: contain;
   padding: 1.2rem;
-}
-
-.narrative-panel {
-  display: block;
-  background:
-    radial-gradient(circle at 78% 25%, rgba(227, 194, 123, 0.45), transparent 30%),
-    linear-gradient(135deg, rgba(40, 31, 22, 0.95), rgba(83, 58, 32, 0.88));
 }
 
 .lore-grid {
