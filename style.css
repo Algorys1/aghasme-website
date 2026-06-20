@@ -1,12 +1,15 @@
 :root {
   --bg: #080706;
   --bg-soft: #13110f;
+  --bg-deep: #0f0d0b;
   --surface: #171411;
   --line: #3d3127;
   --text: #f2dfbf;
   --text-soft: #ccbb9f;
   --gold: #e3c27b;
   --gold-soft: #b8965b;
+  --border-parchment: #8a7150;
+  --legal-link: #5d4227;
   --parchment: #e6d2ac;
   --parchment-ink: #281f16;
   --maxw: 1040px;
@@ -25,7 +28,7 @@ body {
 body {
   font-family: "Source Sans 3", "Segoe UI", sans-serif;
   color: var(--text);
-  background: linear-gradient(180deg, #040303 0%, #0b0908 42%, #0f0d0b 100%);
+  background: linear-gradient(180deg, var(--bg) 0%, var(--bg-soft) 42%, var(--bg-deep) 100%);
   line-height: 1.6;
 }
 
@@ -162,7 +165,7 @@ h3 {
 }
 
 .btn-primary {
-  background: linear-gradient(90deg, #f0d795, #c28f45);
+  background: linear-gradient(90deg, var(--gold), var(--gold-soft));
   color: #23180d;
 }
 
@@ -192,7 +195,7 @@ h3 {
 }
 
 .card {
-  border: 1px solid #8a7150;
+  border: 1px solid var(--border-parchment);
   border-radius: 14px;
   background: linear-gradient(180deg, #efdfbe 0%, #dcc59f 100%);
   color: var(--parchment-ink);
@@ -286,7 +289,7 @@ h3 {
 }
 
 .legal section {
-  border: 1px solid #8a7150;
+  border: 1px solid var(--border-parchment);
   border-radius: 12px;
   background: linear-gradient(180deg, #efdfbe 0%, #dcc59f 100%);
   padding: 0.85rem 0.9rem;
@@ -300,7 +303,7 @@ h3 {
 }
 
 .legal a {
-  color: #5d4227;
+  color: var(--legal-link);
 }
 
 @keyframes rise {
